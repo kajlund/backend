@@ -33,7 +33,7 @@ const startServer = async () => {
   // Add middleware
   apolloServer.applyMiddleware({
       app,
-      path: '/api'
+      path: '/graphql'
   })
 
   // Start server

@@ -4,7 +4,9 @@
   "description": "Node/Postgres backend using GraphQL (Apollo server) built in TypeScript",
   "main": "index.js",
   "scripts": {
+    "build": "rimraf ./build && tsc",
     "dev": "nodemon",
+    "start": "npm run build && node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
@@ -13,6 +15,7 @@
   "devDependencies": {
     "@types/node": "^17.0.23",
     "nodemon": "^2.0.15",
+    "rimraf": "^3.0.2",
     "ts-node": "^10.7.0",
     "typescript": "^4.6.3"
   },
